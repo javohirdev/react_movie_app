@@ -1,0 +1,87 @@
+/**FONTS**/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
+html, body{
+    overflow-x: hidden;
+    background-color: #223343;
+}
+h3{
+    color: #ffffff;
+    text-align: center;
+    margin-top: 10px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.searchInput{
+    border: 3px solid #ffffff;
+    background-color: transparent;
+    color: #ffffff;
+    border-radius: 50px;
+    outline: none;
+    width: 50%;
+    margin: 3rem 21rem;
+    padding: 15px;
+    transition: 0.3s ease;
+    font-weight: 700;
+}
+.searchInput:focus{
+    box-shadow: 5px 15px 15px #1b2a38;
+    border: none;
+}
+.result{
+    text-align: center;
+    background-color: #1c2a38;
+    padding: 15px;
+    margin: 10px;
+}
+
+/**RESPONSIVE**/
+
+@media screen and (max-width: 1200px){
+    .search{
+        padding: 1rem;
+    }
+    .searchInput{
+        margin: 0 7rem;
+        width: 75%;
+    }
+    .result > img{
+        width: 75%;
+    }
+}
+@media screen and (max-width: 1024px){
+    .search{
+        padding: 1rem;
+    }
+    .searchInput{
+        margin: 0 7rem;
+        width: 75%;
+    }
+    .result > img{
+        width: 75%;
+    }
+}
+@media screen and (max-width: 767px){
+    .search{
+        padding: 1rem;
+    }
+    .searchInput{
+        margin: 0;
+        width: 100%;
+    }
+    .result > img{
+        width: 75%;
+    }
+}
+@media (min-width: 315px) and (max-width: 576px){
+    .search{
+        padding: 1rem;
+    }
+    .searchInput{
+        margin: 0;
+        width: 100%;
+    }
+    .result > img{
+        width: 100%;
+    }
+}
